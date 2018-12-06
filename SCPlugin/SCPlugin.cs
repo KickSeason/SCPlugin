@@ -17,7 +17,7 @@ namespace Neo.Plugins
             StandardService.Notify += this.notify;
             StandardService.Log += this.log;
         }
-        public override string Name
+        public string Cmd
         {
             get
             {
@@ -47,7 +47,7 @@ namespace Neo.Plugins
         {
             get
             {
-                var str = "\t" + this.Name + " [.avm] test your smart contract.\n";
+                var str = "\t" + this.Cmd + " [.avm] test your smart contract.\n";
                 return str;
             }
         }
